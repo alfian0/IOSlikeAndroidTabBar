@@ -39,6 +39,8 @@ class ViewController: UIViewController {
             logo.contentMode = .ScaleAspectFit
         self.navigationItem.titleView = logo
         
+        let titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+            UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, forState: .Selected)
         self.segmentedControl.addTarget(self, action: #selector(self.segementedAction(_:)), forControlEvents: .ValueChanged)
         
 //        self.addShadowToBar()
@@ -93,4 +95,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(self.collectionView.frame.width, self.collectionView.frame.height)
     }
+    
+//    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+//        let indexPath = self.collectionView.indexPathsForVisibleItems()
+//        self.segmentedControl.selectedSegmentIndex = (indexPath.first?.section)!
+//    }
 }
