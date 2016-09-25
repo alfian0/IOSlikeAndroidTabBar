@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="AndroidTabBar" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="MLV-qG-mJl" id="WTf-c1-a9S"/>
+                <outlet property="segmentedControl" destination="Ftu-zq-OY1" id="LDB-VQ-Kvz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MLV-qG-mJl">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="50" width="320" height="518"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ghy-KB-VKc">
                         <size key="itemSize" width="50" height="50"/>
@@ -26,13 +27,37 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofw-50-eYy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ftu-zq-OY1">
+                            <rect key="frame" x="8" y="11" width="304" height="29"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                                <segment title="Third"/>
+                            </segments>
+                            <color key="tintColor" red="0.92549019610000005" green="0.42352941179999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.1450980392" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ftu-zq-OY1" secondAttribute="trailing" constant="8" id="7bZ-tK-TPF"/>
+                        <constraint firstAttribute="height" constant="50" id="BaK-WB-jFY"/>
+                        <constraint firstItem="Ftu-zq-OY1" firstAttribute="leading" secondItem="Ofw-50-eYy" secondAttribute="leading" constant="8" id="hMU-TW-LqL"/>
+                        <constraint firstItem="Ftu-zq-OY1" firstAttribute="centerY" secondItem="Ofw-50-eYy" secondAttribute="centerY" id="mdN-5q-LJm"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="MLV-qG-mJl" secondAttribute="trailing" id="2lX-3D-5Z3"/>
+                <constraint firstItem="MLV-qG-mJl" firstAttribute="top" secondItem="Ofw-50-eYy" secondAttribute="bottom" id="6ms-Ht-Huq"/>
                 <constraint firstAttribute="bottom" secondItem="MLV-qG-mJl" secondAttribute="bottom" id="JeL-i7-E1D"/>
                 <constraint firstItem="MLV-qG-mJl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QUY-5g-ZYq"/>
-                <constraint firstItem="MLV-qG-mJl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iOm-mw-brP"/>
+                <constraint firstItem="Ofw-50-eYy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cnB-M2-86Q"/>
+                <constraint firstAttribute="trailing" secondItem="Ofw-50-eYy" secondAttribute="trailing" id="gKg-vS-BAU"/>
+                <constraint firstItem="Ofw-50-eYy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mh6-YO-Duz"/>
             </constraints>
             <point key="canvasLocation" x="340" y="375"/>
         </view>

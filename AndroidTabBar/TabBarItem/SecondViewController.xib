@@ -19,11 +19,11 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-p7-vYX">
                     <rect key="frame" x="8" y="269" width="304" height="30"/>
                     <state key="normal" title="Alert !">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="0.23921568630000001" green="0.75294117650000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.23921568630000001" green="0.75294117650000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="PWL-p7-vYX" secondAttribute="trailing" constant="8" id="Gc3-Vj-7wq"/>
                 <constraint firstItem="PWL-p7-vYX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KBy-oB-RDO"/>

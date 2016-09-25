@@ -15,7 +15,11 @@ extension AppDelegate {
         
         let viewController = ViewController()
         let navController = UINavigationController(rootViewController: viewController)
-            navController.navigationBarHidden = true
+            navController.navigationBarHidden = false
+            navController.navigationBar.barTintColor = UIColor(red: 38/255, green: 37/255, blue: 40/255, alpha: 1)
+            navController.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+            navController.navigationBar.shadowImage = UIImage()
+            navController.navigationBar.translucent = false
         
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
