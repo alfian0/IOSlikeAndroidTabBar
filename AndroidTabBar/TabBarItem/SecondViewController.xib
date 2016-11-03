@@ -8,6 +8,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="AndroidTabBar" customModuleProvider="target">
             <connections>
                 <outlet property="alertButton" destination="PWL-p7-vYX" id="bqo-Ta-frY"/>
+                <outlet property="capsuleButton" destination="kTj-Gf-nXY" id="ACm-oc-6db"/>
+                <outlet property="dashedLineView" destination="HZY-6F-hUe" id="gta-lb-NMi"/>
+                <outlet property="profileImage" destination="GlQ-Up-0cs" id="qKX-lV-QjO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,18 +19,45 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-p7-vYX">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-p7-vYX" customClass="DefaultButton" customModule="AndroidTabBar" customModuleProvider="target">
                     <rect key="frame" x="8" y="269" width="304" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Alert !">
-                        <color key="titleColor" red="0.23921568630000001" green="0.75294117650000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTj-Gf-nXY" customClass="CapsuleButton" customModule="AndroidTabBar" customModuleProvider="target">
+                    <rect key="frame" x="8" y="307" width="304" height="30"/>
+                    <state key="normal" title="Capsule"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-Up-0cs">
+                    <rect key="frame" x="96" y="133" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="lrG-9k-nLw"/>
+                        <constraint firstAttribute="height" constant="128" id="myq-Lo-quA"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZY-6F-hUe">
+                    <rect key="frame" x="8" y="345" width="304" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vo4-A3-TYT"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="GlQ-Up-0cs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3L3-vq-HFo"/>
+                <constraint firstItem="HZY-6F-hUe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="79U-6y-34D"/>
+                <constraint firstAttribute="trailing" secondItem="kTj-Gf-nXY" secondAttribute="trailing" constant="8" id="BoI-7y-3Vd"/>
+                <constraint firstItem="PWL-p7-vYX" firstAttribute="top" secondItem="GlQ-Up-0cs" secondAttribute="bottom" constant="8" id="E1j-eL-noa"/>
                 <constraint firstAttribute="trailing" secondItem="PWL-p7-vYX" secondAttribute="trailing" constant="8" id="Gc3-Vj-7wq"/>
                 <constraint firstItem="PWL-p7-vYX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KBy-oB-RDO"/>
                 <constraint firstItem="PWL-p7-vYX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="LaB-1P-OEX"/>
+                <constraint firstItem="HZY-6F-hUe" firstAttribute="top" secondItem="kTj-Gf-nXY" secondAttribute="bottom" constant="8" id="N0t-xE-gIm"/>
+                <constraint firstItem="kTj-Gf-nXY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="arh-jY-FY3"/>
+                <constraint firstItem="kTj-Gf-nXY" firstAttribute="top" secondItem="PWL-p7-vYX" secondAttribute="bottom" constant="8" id="rE0-Lp-VGB"/>
+                <constraint firstAttribute="trailing" secondItem="HZY-6F-hUe" secondAttribute="trailing" constant="8" id="xQa-2X-o26"/>
             </constraints>
             <point key="canvasLocation" x="340" y="375"/>
         </view>

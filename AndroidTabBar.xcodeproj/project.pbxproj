@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8029554A1DA3A1E80073A37C /* AnimationLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802955491DA3A1E80073A37C /* AnimationLibrary.swift */; };
+		8068E2691DA3E0DE00C42740 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2681DA3E0DE00C42740 /* SwiftyJSON.swift */; };
+		8068E26D1DA3E17600C42740 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E26C1DA3E17600C42740 /* UIColor.swift */; };
+		8068E26F1DA3E1AF00C42740 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E26E1DA3E1AF00C42740 /* UIImageView.swift */; };
+		8068E2721DA3E5CE00C42740 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2711DA3E5CE00C42740 /* ColorPalette.swift */; };
+		8068E2741DA3E62000C42740 /* ImageFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2731DA3E62000C42740 /* ImageFactories.swift */; };
+		8068E2761DA3EEFC00C42740 /* FontFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2751DA3EEFC00C42740 /* FontFactories.swift */; };
 		80CA85A51D91709B00F725A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA85A41D91709B00F725A0 /* AppDelegate.swift */; };
 		80CA85AC1D91709B00F725A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CA85AB1D91709B00F725A0 /* Assets.xcassets */; };
 		80CA85AF1D91709B00F725A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CA85AD1D91709B00F725A0 /* LaunchScreen.storyboard */; };
@@ -22,9 +29,20 @@
 		80CA85CD1D917C0500F725A0 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA85CB1D917C0500F725A0 /* BaseCollectionViewCell.swift */; };
 		80CA85CE1D917C0500F725A0 /* BaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CA85CC1D917C0500F725A0 /* BaseCollectionViewCell.xib */; };
 		80CA85D01D918E2C00F725A0 /* MTGdanmumford.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80CA85CF1D918E2C00F725A0 /* MTGdanmumford.jpg */; };
+		80FA63171DA4B8FC0041CCCC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FA63161DA4B8FC0041CCCC /* R.generated.swift */; };
+		B6308543EA0B70E8B88030F5 /* Pods_AndroidTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADD6C5FA2C267F2BFEB88C1 /* Pods_AndroidTabBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E77890A809174DDE4442ED7 /* Pods-AndroidTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndroidTabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-AndroidTabBar/Pods-AndroidTabBar.release.xcconfig"; sourceTree = "<group>"; };
+		5ADD6C5FA2C267F2BFEB88C1 /* Pods_AndroidTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndroidTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802955491DA3A1E80073A37C /* AnimationLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLibrary.swift; sourceTree = "<group>"; };
+		8068E2681DA3E0DE00C42740 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		8068E26C1DA3E17600C42740 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8068E26E1DA3E1AF00C42740 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8068E2711DA3E5CE00C42740 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		8068E2731DA3E62000C42740 /* ImageFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFactories.swift; sourceTree = "<group>"; };
+		8068E2751DA3EEFC00C42740 /* FontFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFactories.swift; sourceTree = "<group>"; };
 		80CA85A11D91709B00F725A0 /* AndroidTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CA85A41D91709B00F725A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CA85AB1D91709B00F725A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +60,8 @@
 		80CA85CB1D917C0500F725A0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		80CA85CC1D917C0500F725A0 /* BaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		80CA85CF1D918E2C00F725A0 /* MTGdanmumford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTGdanmumford.jpg; sourceTree = "<group>"; };
+		80FA63161DA4B8FC0041CCCC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		EA27D23BF52595D26E61D630 /* Pods-AndroidTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndroidTabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AndroidTabBar/Pods-AndroidTabBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +69,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6308543EA0B70E8B88030F5 /* Pods_AndroidTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8068E26A1DA3E14900C42740 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8068E2701DA3E5BF00C42740 /* Factories */,
+				8068E26B1DA3E16900C42740 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8068E26B1DA3E16900C42740 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8068E26C1DA3E17600C42740 /* UIColor.swift */,
+				8068E26E1DA3E1AF00C42740 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8068E2701DA3E5BF00C42740 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				8068E2711DA3E5CE00C42740 /* ColorPalette.swift */,
+				8068E2731DA3E62000C42740 /* ImageFactories.swift */,
+				8068E2751DA3EEFC00C42740 /* FontFactories.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		80CA85981D91709B00F725A0 = {
 			isa = PBXGroup;
 			children = (
 				80CA85A31D91709B00F725A0 /* AndroidTabBar */,
 				80CA85A21D91709B00F725A0 /* Products */,
+				EC0843F51A48AFBEBFAEF85B /* Pods */,
+				CE34B9B10518C8B301C1AF3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +125,8 @@
 		80CA85A31D91709B00F725A0 /* AndroidTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				80FA63161DA4B8FC0041CCCC /* R.generated.swift */,
+				8068E26A1DA3E14900C42740 /* Common */,
 				80CA85A41D91709B00F725A0 /* AppDelegate.swift */,
 				80CA85AB1D91709B00F725A0 /* Assets.xcassets */,
 				80CA85AD1D91709B00F725A0 /* LaunchScreen.storyboard */,
@@ -84,6 +137,8 @@
 				80CA85CB1D917C0500F725A0 /* BaseCollectionViewCell.swift */,
 				80CA85CC1D917C0500F725A0 /* BaseCollectionViewCell.xib */,
 				80CA85BE1D917A9900F725A0 /* TabBarItem */,
+				802955491DA3A1E80073A37C /* AnimationLibrary.swift */,
+				8068E2681DA3E0DE00C42740 /* SwiftyJSON.swift */,
 			);
 			path = AndroidTabBar;
 			sourceTree = "<group>";
@@ -102,6 +157,23 @@
 			path = TabBarItem;
 			sourceTree = "<group>";
 		};
+		CE34B9B10518C8B301C1AF3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ADD6C5FA2C267F2BFEB88C1 /* Pods_AndroidTabBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0843F51A48AFBEBFAEF85B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA27D23BF52595D26E61D630 /* Pods-AndroidTabBar.debug.xcconfig */,
+				4E77890A809174DDE4442ED7 /* Pods-AndroidTabBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80CA85B31D91709B00F725A0 /* Build configuration list for PBXNativeTarget "AndroidTabBar" */;
 			buildPhases = (
+				894DCF46C10117BCD09D0AF0 /* [CP] Check Pods Manifest.lock */,
 				80CA859D1D91709B00F725A0 /* Sources */,
 				80CA859E1D91709B00F725A0 /* Frameworks */,
 				80CA859F1D91709B00F725A0 /* Resources */,
+				54CF6EFDCA66776B06F7D4D8 /* [CP] Embed Pods Frameworks */,
+				4B93939A68662C381AC86083 /* [CP] Copy Pods Resources */,
+				8068E2961DA4AEDC00C42740 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -173,6 +249,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B93939A68662C381AC86083 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AndroidTabBar/Pods-AndroidTabBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54CF6EFDCA66776B06F7D4D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AndroidTabBar/Pods-AndroidTabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8068E2961DA4AEDC00C42740 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/AndroidTabBar\"";
+		};
+		894DCF46C10117BCD09D0AF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80CA859D1D91709B00F725A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,11 +317,19 @@
 			files = (
 				80CA85BC1D91794F00F725A0 /* ViewController.swift in Sources */,
 				80CA85CD1D917C0500F725A0 /* BaseCollectionViewCell.swift in Sources */,
+				80FA63171DA4B8FC0041CCCC /* R.generated.swift in Sources */,
 				80CA85B71D9170CF00F725A0 /* AppDelegateExtension.swift in Sources */,
+				8068E2761DA3EEFC00C42740 /* FontFactories.swift in Sources */,
+				8068E26D1DA3E17600C42740 /* UIColor.swift in Sources */,
 				80CA85A51D91709B00F725A0 /* AppDelegate.swift in Sources */,
 				80CA85C51D917ABE00F725A0 /* SecondViewController.swift in Sources */,
 				80CA85C91D917ACA00F725A0 /* ThirdViewController.swift in Sources */,
+				8068E2691DA3E0DE00C42740 /* SwiftyJSON.swift in Sources */,
+				8029554A1DA3A1E80073A37C /* AnimationLibrary.swift in Sources */,
+				8068E26F1DA3E1AF00C42740 /* UIImageView.swift in Sources */,
 				80CA85C11D917AB000F725A0 /* FirstViewController.swift in Sources */,
+				8068E2721DA3E5CE00C42740 /* ColorPalette.swift in Sources */,
+				8068E2741DA3E62000C42740 /* ImageFactories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +434,7 @@
 		};
 		80CA85B41D91709B00F725A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA27D23BF52595D26E61D630 /* Pods-AndroidTabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AndroidTabBar/Info.plist;
@@ -301,6 +447,7 @@
 		};
 		80CA85B51D91709B00F725A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E77890A809174DDE4442ED7 /* Pods-AndroidTabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AndroidTabBar/Info.plist;

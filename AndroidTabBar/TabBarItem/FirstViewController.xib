@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="AndroidTabBar" customModuleProvider="target">
             <connections>
-                <outlet property="nextButton" destination="R3x-sY-Lzw" id="LWF-qG-PgQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,18 +15,24 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3x-sY-Lzw">
-                    <rect key="frame" x="8" y="269" width="304" height="30"/>
-                    <state key="normal" title="To Second View Controller">
-                        <color key="titleColor" red="0.92549019610000005" green="0.42352941179999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="21d-H3-swo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ioq-nb-EM6">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="R3x-sY-Lzw" secondAttribute="trailing" constant="8" id="PDG-Dh-YoS"/>
-                <constraint firstItem="R3x-sY-Lzw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="U7O-Ml-Gub"/>
-                <constraint firstItem="R3x-sY-Lzw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lSJ-Vh-DXG"/>
+                <constraint firstAttribute="trailing" secondItem="21d-H3-swo" secondAttribute="trailing" id="9iF-BL-pjG"/>
+                <constraint firstItem="21d-H3-swo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J9g-DV-FuS"/>
+                <constraint firstAttribute="trailing" secondItem="ioq-nb-EM6" secondAttribute="trailing" id="WEk-Ig-o7f"/>
+                <constraint firstAttribute="bottom" secondItem="ioq-nb-EM6" secondAttribute="bottom" id="dsO-UF-4qy"/>
+                <constraint firstItem="ioq-nb-EM6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ewJ-ip-BbQ"/>
+                <constraint firstItem="ioq-nb-EM6" firstAttribute="top" secondItem="21d-H3-swo" secondAttribute="bottom" id="kqw-me-pWC"/>
+                <constraint firstItem="21d-H3-swo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yui-iI-6IY"/>
             </constraints>
             <point key="canvasLocation" x="340" y="375"/>
         </view>

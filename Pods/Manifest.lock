@@ -1,0 +1,15 @@
+PODS:
+  - R.swift (0.13.0)
+  - Swinject (1.1.4)
+
+DEPENDENCIES:
+  - R.swift (~> 0.13.0)
+  - Swinject
+
+SPEC CHECKSUMS:
+  R.swift: 07e0796d2b4d50b875eb7de9bd8e6193e15c6434
+  Swinject: 8863ebff588a8574f1bc9af8a6abed11389865f7
+
+PODFILE CHECKSUM: 5d1be17f881689e14f6b0b89711dfe8b8421cd79
+
+COCOAPODS: 1.0.1

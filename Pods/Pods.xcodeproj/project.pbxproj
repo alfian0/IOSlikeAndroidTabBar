@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043CE2C27FB1BD0540BC005A79610FE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		15A83F146E3050635D6F7E1246863CA2 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDADFD2216C61FA9EF5F730929ED59 /* SwinjectStoryboard+StoryboardReference.swift */; };
+		16BF9194435EA1AD03BDC6369C074EF0 /* PropertyLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E16BE67EDABD9A85E9042B6159D76B /* PropertyLoaderType.swift */; };
+		1FDF6458E798FC54EE3E409891FFA08E /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1266E7980B8810C4CE7B8CA86BF373 /* Container+SwinjectStoryboard.swift */; };
+		22D76FC3CBF5194C29E69C895772CE02 /* Resolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3058847F2D7C9EDC750249BD5EFFB1AB /* Resolvable.swift */; };
+		32DACCF13AC8DDCBE3055D1B332EB00D /* _SwinjectStoryboardBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D1838113A5C9852788B8DDBD1B4C4B /* _SwinjectStoryboardBase.m */; };
+		35E8979B2583BC2125CB9ACC8F958C09 /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798D7BE53BE4C20DA617861E5E5FA23 /* FunctionType.swift */; };
+		3CA34DBBD668484ED173367B74DC76EB /* Container.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A83EC08AB7A61F0878251C735CC413 /* Container.Arguments.swift */; };
+		5AA9E95C3FB542D2E1BC5A93AE96E3A9 /* AssemblyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0A825FE656AF67F74D6923D179AD9 /* AssemblyType.swift */; };
+		6A4CD8C6EEAAB21F7832B564A6865327 /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EC919828BB850593977B82B996F78 /* SynchronizedResolver.Arguments.swift */; };
+		705003B215A0B7BB2146D5E33FA7251D /* JsonPropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC59A76862FDEF44F512E49529BD25 /* JsonPropertyLoader.swift */; };
+		7220E8D381914E5431428D0BFBF1C4B7 /* Swinject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B19330863F59BA8931713979D223DD6 /* Swinject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D03128E20CCFCB898F9852691499E09 /* Swinject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22996AA22950CA909BCB1E68BB8B9C9F /* Swinject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EABF2BCFC626B46CB750B1C71BB4C5D /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81074297AD21E2E94EC25C14A78E0841 /* SpinLock.swift */; };
+		89555C7ED507088CFD7BB7E5DF647AFB /* SwinjectStoryboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0770D345CEBE9C03B3AAE7A3C8CDAF /* SwinjectStoryboardType.swift */; };
+		8B86391D848CFA5EEE904D2059D522EB /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053FE53257D982787703D7B0C239B66 /* ObjectScope.swift */; };
+		8D2F996E73D8EE80B4354E9DA7D2C687 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298EABB753268A6C447A22DF1C32AC2 /* SwinjectStoryboard.swift */; };
+		9E4B6D2107E95F26B90034AA95CA89A1 /* Swinject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B744EE0F9C9547EDA74E94761C7E43E0 /* Swinject-dummy.m */; };
+		A44D503E86ECEF4ADABA750C138A9513 /* _SwinjectStoryboardBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4A156E18181293FC239CF4AA44711B /* _SwinjectStoryboardBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A53FC9493252716B560EEE78C0D037D1 /* ResolutionPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF34A54AA9DE3C230E29E7F6330CEDDD /* ResolutionPool.swift */; };
+		B4A91B346CA0A54E72F85CD740760301 /* Pods-AndroidTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E9E2E56EF7F38410EBA8BE1BB257D8 /* Pods-AndroidTabBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6EA3874AE485DACD2CF92FC04CF3AB4 /* PropertyLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB55CA7A70EA0D0AD7B9E04E458DDFC /* PropertyLoaderError.swift */; };
+		CA4B2C17D011E04DA2EDA0BB3CFE5821 /* RegistrationNameAssociatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA93E2D94A0FC76F388605B3BE21D3E /* RegistrationNameAssociatable.swift */; };
+		CEF0878DFCA03B9466B21C7FCBCF1EC2 /* Pods-AndroidTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB001CDE7FC1F1570AE8F5925CCD4D8 /* Pods-AndroidTabBar-dummy.m */; };
+		D2549450277C464E57F021895E00E695 /* ViewController+Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9A959F1D5785E2FD56C1F3BE61CF3 /* ViewController+Swinject.swift */; };
+		D2829C09B00824050F19EE3CF8819A47 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A46DB691E9A5406AB2B1F0C133581 /* ServiceKey.swift */; };
+		D2FD9AB6166BDB4917B76A973DE89D48 /* PropertyRetrievable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC03A283B98784BF5A369C8D1DCCF21 /* PropertyRetrievable.swift */; };
+		D9753D7B7FC6762935C53033CE1D1AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DA3E33E45BA19B590807AAF6A5788753 /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9859C299E802182B86AFC56D44FDB /* SynchronizedResolver.swift */; };
+		DCF156E599D5C45F1473BA66CF65A1B3 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A655905317F8B51A3164ED8F8212CF /* Container.swift */; };
+		E4646A8E643C18E1E94D4F4D4751DC25 /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07470584670CC545F42EFB29F77F4C8 /* ServiceEntry.swift */; };
+		E78C1E5FE6BF71EE32296E4509BAF5DD /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D97065A7186D8D7FD70CEC149585600 /* Assembler.swift */; };
+		E9672D5CC4B07C4FF0CC110EB1E9879E /* PlistPropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E842C36CFF9C3E18D79E09911F896C99 /* PlistPropertyLoader.swift */; };
+		F1D5C7C96470AA7CF03FDA31853383BD /* Storyboard+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A66D11A636E79D683201E60C829C11 /* Storyboard+Swizzling.swift */; };
+		FCAF2E3D2E040DB9F99F367947FC0B99 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA110133A8E2517BF248C4A88D0C7AAD /* Box.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B925FED77B7E2DD384A75015F0343235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBCE2364363645F75DCC14A7C33D3E4;
+			remoteInfo = Swinject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054A46DB691E9A5406AB2B1F0C133581 /* ServiceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceKey.swift; path = Sources/ServiceKey.swift; sourceTree = "<group>"; };
+		06C43AF8D641058D99AC549F624AA3D3 /* Pods-AndroidTabBar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AndroidTabBar-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D97065A7186D8D7FD70CEC149585600 /* Assembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = Sources/Assembler.swift; sourceTree = "<group>"; };
+		1298EABB753268A6C447A22DF1C32AC2 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboard.swift; path = Sources/SwinjectStoryboard/SwinjectStoryboard.swift; sourceTree = "<group>"; };
+		153AEA8B069F836E31CCED3129C15EE2 /* Pods-AndroidTabBar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AndroidTabBar-acknowledgements.plist"; sourceTree = "<group>"; };
+		22996AA22950CA909BCB1E68BB8B9C9F /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
+		24401C499E5D9E60B525F95DB3EDEDEE /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E0A825FE656AF67F74D6923D179AD9 /* AssemblyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssemblyType.swift; path = Sources/AssemblyType.swift; sourceTree = "<group>"; };
+		29752F86D5DF209DFC532F3DED189CCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4A156E18181293FC239CF4AA44711B /* _SwinjectStoryboardBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _SwinjectStoryboardBase.h; path = "Sources/SwinjectStoryboard/iOS-tvOS/_SwinjectStoryboardBase.h"; sourceTree = "<group>"; };
+		3058847F2D7C9EDC750249BD5EFFB1AB /* Resolvable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolvable.swift; path = Sources/Resolvable.swift; sourceTree = "<group>"; };
+		31A83EC08AB7A61F0878251C735CC413 /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
+		3DDC59A76862FDEF44F512E49529BD25 /* JsonPropertyLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonPropertyLoader.swift; path = Sources/JsonPropertyLoader.swift; sourceTree = "<group>"; };
+		4308BFB7CC9514E8D779F41A298E4254 /* Pods_AndroidTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndroidTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F9859C299E802182B86AFC56D44FDB /* SynchronizedResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.swift; path = Sources/SynchronizedResolver.swift; sourceTree = "<group>"; };
+		58E16BE67EDABD9A85E9042B6159D76B /* PropertyLoaderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyLoaderType.swift; path = Sources/PropertyLoaderType.swift; sourceTree = "<group>"; };
+		5F0770D345CEBE9C03B3AAE7A3C8CDAF /* SwinjectStoryboardType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboardType.swift; path = Sources/SwinjectStoryboard/SwinjectStoryboardType.swift; sourceTree = "<group>"; };
+		629967E65649E118B9B1D7442A9B40E4 /* Pods-AndroidTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AndroidTabBar.modulemap"; sourceTree = "<group>"; };
+		65A66D11A636E79D683201E60C829C11 /* Storyboard+Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storyboard+Swizzling.swift"; path = "Sources/SwinjectStoryboard/Storyboard+Swizzling.swift"; sourceTree = "<group>"; };
+		6B19330863F59BA8931713979D223DD6 /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
+		73B9995EFCF7780E1B5785F27DC79D4D /* Swinject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Swinject.modulemap; sourceTree = "<group>"; };
+		7FC03A283B98784BF5A369C8D1DCCF21 /* PropertyRetrievable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyRetrievable.swift; path = Sources/PropertyRetrievable.swift; sourceTree = "<group>"; };
+		81074297AD21E2E94EC25C14A78E0841 /* SpinLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinLock.swift; path = Sources/SpinLock.swift; sourceTree = "<group>"; };
+		8491B5D6DC66818B82BE1CB14F3BA859 /* Pods-AndroidTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndroidTabBar.release.xcconfig"; sourceTree = "<group>"; };
+		8DC9A959F1D5785E2FD56C1F3BE61CF3 /* ViewController+Swinject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+Swinject.swift"; path = "Sources/SwinjectStoryboard/ViewController+Swinject.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99C6B9A6E580E9EEA90E41D9AD4A1C5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1266E7980B8810C4CE7B8CA86BF373 /* Container+SwinjectStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Container+SwinjectStoryboard.swift"; path = "Sources/SwinjectStoryboard/Container+SwinjectStoryboard.swift"; sourceTree = "<group>"; };
+		9BB001CDE7FC1F1570AE8F5925CCD4D8 /* Pods-AndroidTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AndroidTabBar-dummy.m"; sourceTree = "<group>"; };
+		9F8EF00F83C34F95E062B11555B7199C /* Pods-AndroidTabBar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndroidTabBar-frameworks.sh"; sourceTree = "<group>"; };
+		AA110133A8E2517BF248C4A88D0C7AAD /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		B053FE53257D982787703D7B0C239B66 /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
+		B2D1838113A5C9852788B8DDBD1B4C4B /* _SwinjectStoryboardBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _SwinjectStoryboardBase.m; path = "Sources/SwinjectStoryboard/iOS-tvOS/_SwinjectStoryboardBase.m"; sourceTree = "<group>"; };
+		B744EE0F9C9547EDA74E94761C7E43E0 /* Swinject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swinject-dummy.m"; sourceTree = "<group>"; };
+		BBFCBB17A3619606C9916BB03FA13E4C /* Pods-AndroidTabBar-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndroidTabBar-resources.sh"; sourceTree = "<group>"; };
+		C9FDADFD2216C61FA9EF5F730929ED59 /* SwinjectStoryboard+StoryboardReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwinjectStoryboard+StoryboardReference.swift"; path = "Sources/SwinjectStoryboard/SwinjectStoryboard+StoryboardReference.swift"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFB55CA7A70EA0D0AD7B9E04E458DDFC /* PropertyLoaderError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyLoaderError.swift; path = Sources/PropertyLoaderError.swift; sourceTree = "<group>"; };
+		D07470584670CC545F42EFB29F77F4C8 /* ServiceEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.swift; path = Sources/ServiceEntry.swift; sourceTree = "<group>"; };
+		D798D7BE53BE4C20DA617861E5E5FA23 /* FunctionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionType.swift; path = Sources/FunctionType.swift; sourceTree = "<group>"; };
+		DCA93E2D94A0FC76F388605B3BE21D3E /* RegistrationNameAssociatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegistrationNameAssociatable.swift; path = Sources/RegistrationNameAssociatable.swift; sourceTree = "<group>"; };
+		E2B525495C402AD51A223BBB3B6466C2 /* Pods-AndroidTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndroidTabBar.debug.xcconfig"; sourceTree = "<group>"; };
+		E842C36CFF9C3E18D79E09911F896C99 /* PlistPropertyLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistPropertyLoader.swift; path = Sources/PlistPropertyLoader.swift; sourceTree = "<group>"; };
+		EB9EC919828BB850593977B82B996F78 /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
+		EC72AA32E75798FBA17457EA2D701B25 /* Swinject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.xcconfig; sourceTree = "<group>"; };
+		EF34A54AA9DE3C230E29E7F6330CEDDD /* ResolutionPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResolutionPool.swift; path = Sources/ResolutionPool.swift; sourceTree = "<group>"; };
+		F5A655905317F8B51A3164ED8F8212CF /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
+		F5F486B19C9EF821D64A7EA9F9441C6C /* Swinject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-prefix.pch"; sourceTree = "<group>"; };
+		F8E9E2E56EF7F38410EBA8BE1BB257D8 /* Pods-AndroidTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AndroidTabBar-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629FD7C2E6421B52A06010BF647EC1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9753D7B7FC6762935C53033CE1D1AB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B870D0A71E70BE8BC8D8D521F086A7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043CE2C27FB1BD0540BC005A79610FE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12728624C5B2A4BA3BC6C2BD3B1F327F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A845FE4E9BB572570BF657231732F8C4 /* R.swift */,
+				739530EF4EC79AC58EA019955CF5B22C /* Swinject */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3ABCC61EC3B83644433197959A437543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4308BFB7CC9514E8D779F41A298E4254 /* Pods_AndroidTabBar.framework */,
+				24401C499E5D9E60B525F95DB3EDEDEE /* Swinject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		739530EF4EC79AC58EA019955CF5B22C /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				2C4A156E18181293FC239CF4AA44711B /* _SwinjectStoryboardBase.h */,
+				B2D1838113A5C9852788B8DDBD1B4C4B /* _SwinjectStoryboardBase.m */,
+				0D97065A7186D8D7FD70CEC149585600 /* Assembler.swift */,
+				24E0A825FE656AF67F74D6923D179AD9 /* AssemblyType.swift */,
+				AA110133A8E2517BF248C4A88D0C7AAD /* Box.swift */,
+				F5A655905317F8B51A3164ED8F8212CF /* Container.swift */,
+				9B1266E7980B8810C4CE7B8CA86BF373 /* Container+SwinjectStoryboard.swift */,
+				31A83EC08AB7A61F0878251C735CC413 /* Container.Arguments.swift */,
+				D798D7BE53BE4C20DA617861E5E5FA23 /* FunctionType.swift */,
+				3DDC59A76862FDEF44F512E49529BD25 /* JsonPropertyLoader.swift */,
+				B053FE53257D982787703D7B0C239B66 /* ObjectScope.swift */,
+				E842C36CFF9C3E18D79E09911F896C99 /* PlistPropertyLoader.swift */,
+				CFB55CA7A70EA0D0AD7B9E04E458DDFC /* PropertyLoaderError.swift */,
+				58E16BE67EDABD9A85E9042B6159D76B /* PropertyLoaderType.swift */,
+				7FC03A283B98784BF5A369C8D1DCCF21 /* PropertyRetrievable.swift */,
+				DCA93E2D94A0FC76F388605B3BE21D3E /* RegistrationNameAssociatable.swift */,
+				EF34A54AA9DE3C230E29E7F6330CEDDD /* ResolutionPool.swift */,
+				3058847F2D7C9EDC750249BD5EFFB1AB /* Resolvable.swift */,
+				D07470584670CC545F42EFB29F77F4C8 /* ServiceEntry.swift */,
+				054A46DB691E9A5406AB2B1F0C133581 /* ServiceKey.swift */,
+				81074297AD21E2E94EC25C14A78E0841 /* SpinLock.swift */,
+				65A66D11A636E79D683201E60C829C11 /* Storyboard+Swizzling.swift */,
+				6B19330863F59BA8931713979D223DD6 /* Swinject.h */,
+				1298EABB753268A6C447A22DF1C32AC2 /* SwinjectStoryboard.swift */,
+				C9FDADFD2216C61FA9EF5F730929ED59 /* SwinjectStoryboard+StoryboardReference.swift */,
+				5F0770D345CEBE9C03B3AAE7A3C8CDAF /* SwinjectStoryboardType.swift */,
+				52F9859C299E802182B86AFC56D44FDB /* SynchronizedResolver.swift */,
+				EB9EC919828BB850593977B82B996F78 /* SynchronizedResolver.Arguments.swift */,
+				8DC9A959F1D5785E2FD56C1F3BE61CF3 /* ViewController+Swinject.swift */,
+				8068FF9432A8A16D164DB689C8C00F5B /* Support Files */,
+			);
+			path = Swinject;
+			sourceTree = "<group>";
+		};
+		7610D33C49A786442AD927406DD99C36 /* Pods-AndroidTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				99C6B9A6E580E9EEA90E41D9AD4A1C5E /* Info.plist */,
+				629967E65649E118B9B1D7442A9B40E4 /* Pods-AndroidTabBar.modulemap */,
+				06C43AF8D641058D99AC549F624AA3D3 /* Pods-AndroidTabBar-acknowledgements.markdown */,
+				153AEA8B069F836E31CCED3129C15EE2 /* Pods-AndroidTabBar-acknowledgements.plist */,
+				9BB001CDE7FC1F1570AE8F5925CCD4D8 /* Pods-AndroidTabBar-dummy.m */,
+				9F8EF00F83C34F95E062B11555B7199C /* Pods-AndroidTabBar-frameworks.sh */,
+				BBFCBB17A3619606C9916BB03FA13E4C /* Pods-AndroidTabBar-resources.sh */,
+				F8E9E2E56EF7F38410EBA8BE1BB257D8 /* Pods-AndroidTabBar-umbrella.h */,
+				E2B525495C402AD51A223BBB3B6466C2 /* Pods-AndroidTabBar.debug.xcconfig */,
+				8491B5D6DC66818B82BE1CB14F3BA859 /* Pods-AndroidTabBar.release.xcconfig */,
+			);
+			name = "Pods-AndroidTabBar";
+			path = "Target Support Files/Pods-AndroidTabBar";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				12728624C5B2A4BA3BC6C2BD3B1F327F /* Pods */,
+				3ABCC61EC3B83644433197959A437543 /* Products */,
+				DBD59B58FB5F94F15BB4FFBFCA658EE6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8068FF9432A8A16D164DB689C8C00F5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29752F86D5DF209DFC532F3DED189CCF /* Info.plist */,
+				73B9995EFCF7780E1B5785F27DC79D4D /* Swinject.modulemap */,
+				EC72AA32E75798FBA17457EA2D701B25 /* Swinject.xcconfig */,
+				B744EE0F9C9547EDA74E94761C7E43E0 /* Swinject-dummy.m */,
+				F5F486B19C9EF821D64A7EA9F9441C6C /* Swinject-prefix.pch */,
+				22996AA22950CA909BCB1E68BB8B9C9F /* Swinject-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Swinject";
+			sourceTree = "<group>";
+		};
+		A845FE4E9BB572570BF657231732F8C4 /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBD59B58FB5F94F15BB4FFBFCA658EE6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7610D33C49A786442AD927406DD99C36 /* Pods-AndroidTabBar */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87388150ED937668A9826D208CB56671 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A91B346CA0A54E72F85CD740760301 /* Pods-AndroidTabBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D24DD9E61376A3E155A2915D50AD450 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44D503E86ECEF4ADABA750C138A9513 /* _SwinjectStoryboardBase.h in Headers */,
+				7D03128E20CCFCB898F9852691499E09 /* Swinject-umbrella.h in Headers */,
+				7220E8D381914E5431428D0BFBF1C4B7 /* Swinject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E6DAEF3D3747CCE2033E45CB0E539BF2 /* Pods-AndroidTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73929C695B026760E9E1384B6ED1FF8C /* Build configuration list for PBXNativeTarget "Pods-AndroidTabBar" */;
+			buildPhases = (
+				12F83EA934C9740FDFCF21DECA22BB81 /* Sources */,
+				629FD7C2E6421B52A06010BF647EC1CF /* Frameworks */,
+				87388150ED937668A9826D208CB56671 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB37A5640DF6F4C7494C52A83243FE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-AndroidTabBar";
+			productName = "Pods-AndroidTabBar";
+			productReference = 4308BFB7CC9514E8D779F41A298E4254 /* Pods_AndroidTabBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBBCE2364363645F75DCC14A7C33D3E4 /* Swinject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37AEDBDA149D44DF4DE7E0C52BAD3D3C /* Build configuration list for PBXNativeTarget "Swinject" */;
+			buildPhases = (
+				19CCD20D1CCC8EF751BCDCA4540D7C59 /* Sources */,
+				B870D0A71E70BE8BC8D8D521F086A7FA /* Frameworks */,
+				9D24DD9E61376A3E155A2915D50AD450 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swinject;
+			productName = Swinject;
+			productReference = 24401C499E5D9E60B525F95DB3EDEDEE /* Swinject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3ABCC61EC3B83644433197959A437543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6DAEF3D3747CCE2033E45CB0E539BF2 /* Pods-AndroidTabBar */,
+				FBBCE2364363645F75DCC14A7C33D3E4 /* Swinject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12F83EA934C9740FDFCF21DECA22BB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF0878DFCA03B9466B21C7FCBCF1EC2 /* Pods-AndroidTabBar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CCD20D1CCC8EF751BCDCA4540D7C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DACCF13AC8DDCBE3055D1B332EB00D /* _SwinjectStoryboardBase.m in Sources */,
+				E78C1E5FE6BF71EE32296E4509BAF5DD /* Assembler.swift in Sources */,
+				5AA9E95C3FB542D2E1BC5A93AE96E3A9 /* AssemblyType.swift in Sources */,
+				FCAF2E3D2E040DB9F99F367947FC0B99 /* Box.swift in Sources */,
+				1FDF6458E798FC54EE3E409891FFA08E /* Container+SwinjectStoryboard.swift in Sources */,
+				3CA34DBBD668484ED173367B74DC76EB /* Container.Arguments.swift in Sources */,
+				DCF156E599D5C45F1473BA66CF65A1B3 /* Container.swift in Sources */,
+				35E8979B2583BC2125CB9ACC8F958C09 /* FunctionType.swift in Sources */,
+				705003B215A0B7BB2146D5E33FA7251D /* JsonPropertyLoader.swift in Sources */,
+				8B86391D848CFA5EEE904D2059D522EB /* ObjectScope.swift in Sources */,
+				E9672D5CC4B07C4FF0CC110EB1E9879E /* PlistPropertyLoader.swift in Sources */,
+				C6EA3874AE485DACD2CF92FC04CF3AB4 /* PropertyLoaderError.swift in Sources */,
+				16BF9194435EA1AD03BDC6369C074EF0 /* PropertyLoaderType.swift in Sources */,
+				D2FD9AB6166BDB4917B76A973DE89D48 /* PropertyRetrievable.swift in Sources */,
+				CA4B2C17D011E04DA2EDA0BB3CFE5821 /* RegistrationNameAssociatable.swift in Sources */,
+				A53FC9493252716B560EEE78C0D037D1 /* ResolutionPool.swift in Sources */,
+				22D76FC3CBF5194C29E69C895772CE02 /* Resolvable.swift in Sources */,
+				E4646A8E643C18E1E94D4F4D4751DC25 /* ServiceEntry.swift in Sources */,
+				D2829C09B00824050F19EE3CF8819A47 /* ServiceKey.swift in Sources */,
+				7EABF2BCFC626B46CB750B1C71BB4C5D /* SpinLock.swift in Sources */,
+				F1D5C7C96470AA7CF03FDA31853383BD /* Storyboard+Swizzling.swift in Sources */,
+				9E4B6D2107E95F26B90034AA95CA89A1 /* Swinject-dummy.m in Sources */,
+				15A83F146E3050635D6F7E1246863CA2 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
+				8D2F996E73D8EE80B4354E9DA7D2C687 /* SwinjectStoryboard.swift in Sources */,
+				89555C7ED507088CFD7BB7E5DF647AFB /* SwinjectStoryboardType.swift in Sources */,
+				6A4CD8C6EEAAB21F7832B564A6865327 /* SynchronizedResolver.Arguments.swift in Sources */,
+				DA3E33E45BA19B590807AAF6A5788753 /* SynchronizedResolver.swift in Sources */,
+				D2549450277C464E57F021895E00E695 /* ViewController+Swinject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBB37A5640DF6F4C7494C52A83243FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swinject;
+			target = FBBCE2364363645F75DCC14A7C33D3E4 /* Swinject */;
+			targetProxy = B925FED77B7E2DD384A75015F0343235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18CACB11C2D43A04B0D25A2FF7DEF007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC72AA32E75798FBA17457EA2D701B25 /* Swinject.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2409270C3C7BB78C24895BFB99A61036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC72AA32E75798FBA17457EA2D701B25 /* Swinject.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39246611549CDFD0682378A96834C568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B525495C402AD51A223BBB3B6466C2 /* Pods-AndroidTabBar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AndroidTabBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AndroidTabBar/Pods-AndroidTabBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AndroidTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8AAB899A196235E3677F3707513E3F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8491B5D6DC66818B82BE1CB14F3BA859 /* Pods-AndroidTabBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AndroidTabBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AndroidTabBar/Pods-AndroidTabBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AndroidTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37AEDBDA149D44DF4DE7E0C52BAD3D3C /* Build configuration list for PBXNativeTarget "Swinject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CACB11C2D43A04B0D25A2FF7DEF007 /* Debug */,
+				2409270C3C7BB78C24895BFB99A61036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73929C695B026760E9E1384B6ED1FF8C /* Build configuration list for PBXNativeTarget "Pods-AndroidTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39246611549CDFD0682378A96834C568 /* Debug */,
+				8AAB899A196235E3677F3707513E3F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

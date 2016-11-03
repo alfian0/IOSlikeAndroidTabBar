@@ -9,7 +9,6 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    @IBOutlet weak var nextButton: UIButton!
 
     init() {
         super.init(nibName: "FirstViewController", bundle: nil)
@@ -22,10 +21,5 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.nextButton.addTarget(self, action: #selector(self.nextAction(_:)), forControlEvents: .TouchUpInside)
-    }
-    
-    @objc private func nextAction(sender: UIButton) {
-        print("Next Button Bro !")
     }
 }

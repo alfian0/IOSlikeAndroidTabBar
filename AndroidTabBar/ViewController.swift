@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         if self.navigationController?.navigationBar.hidden == true {
             self.edgesForExtendedLayout = UIRectEdge.None
         }
-        let logo = UIImageView(image: UIImage(named: "go-dev-logo"))
+        let logo = UIImageView(image: R.image.goDevLogo)
             logo.frame = CGRectMake(0, 0, 30, 30)
             logo.contentMode = .ScaleAspectFit
         self.navigationItem.titleView = logo
