@@ -95,9 +95,63 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(self.collectionView.frame.width, self.collectionView.frame.height)
     }
+}
+
+extension UIView {
+    func addShadow(root: UIView) {
+        let shadowView: UIView = UIView(frame: self.frame)
+            shadowView.backgroundColor = UIColor.whiteColor()
+            shadowView.layer.masksToBounds = false
+            shadowView.layer.cornerRadius = self.layer.cornerRadius
+            shadowView.layer.shadowOpacity = 0.4
+            shadowView.layer.shadowOffset = CGSize(width: 0, height: 2)
+            shadowView.layer.shadowRadius =  4
+            shadowView.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        root.insertSubview(shadowView, belowSubview: self)
+    }
+}
+
+@IBDesignable class RoundRectView: UIView {
     
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-//        let indexPath = self.collectionView.indexPathsForVisibleItems()
-//        self.segmentedControl.selectedSegmentIndex = (indexPath.first?.section)!
-//    }
+    @IBInspectable var cornerRadius: CGFloat = 0.0
+    @IBInspectable var borderColor: UIColor = UIColor.blackColor()
+    @IBInspectable var borderWidth: CGFloat = 0.5
+    private var customBackgroundColor = UIColor.whiteColor()
+    override var backgroundColor: UIColor?{
+        didSet {
+            customBackgroundColor = backgroundColor!
+            super.backgroundColor = UIColor.clearColor()
+        }
+    }
+    
+    func setup() {
+        layer.shadowColor = UIColor.blackColor().CGColor;
+        layer.shadowOffset = CGSizeZero;
+        layer.shadowRadius = 5.0;
+        layer.shadowOpacity = 0.5;
+        super.backgroundColor = UIColor.clearColor()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.setup()
+    }
+    
+    override func drawRect(rect: CGRect) {
+        customBackgroundColor.setFill()
+        UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius ?? 0).fill()
+        
+        let borderRect = CGRectInset(bounds, borderWidth/2, borderWidth/2)
+        let borderPath = UIBezierPath(roundedRect: borderRect, cornerRadius: cornerRadius - borderWidth/2)
+        borderColor.setStroke()
+        borderPath.lineWidth = borderWidth
+        borderPath.stroke()
+        
+        // whatever else you need drawn
+    }
 }

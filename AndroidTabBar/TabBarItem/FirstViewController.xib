@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="AndroidTabBar" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="ioq-nb-EM6" id="aln-Ff-c7A"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

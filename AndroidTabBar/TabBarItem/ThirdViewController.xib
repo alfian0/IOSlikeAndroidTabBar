@@ -7,6 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdViewController" customModule="AndroidTabBar" customModuleProvider="target">
             <connections>
+                <outlet property="informationLabel" destination="75o-8R-Vwk" id="rf5-Tx-n4B"/>
+                <outlet property="messageLabel" destination="kZT-Es-TRv" id="FWS-gW-1ux"/>
+                <outlet property="navBar" destination="vdR-1Z-y1v" id="8dH-7V-Fqb"/>
+                <outlet property="readMoreButton" destination="0Qv-7u-SC8" id="nX9-8c-asI"/>
+                <outlet property="subNavBar" destination="KId-Lj-CmI" id="AW5-UO-Dd2"/>
+                <outlet property="titleLabel" destination="ctj-5p-e1h" id="H5o-cB-pFT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,12 +24,104 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MTGdanmumford.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bfX-L5-CeK">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GH-hx-gz4">
+                    <rect key="frame" x="8" y="8" width="304" height="552"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-1Z-y1v">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dribble" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctj-5p-e1h">
+                                    <rect key="frame" x="8" y="8" width="288" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="ctj-5p-e1h" firstAttribute="top" secondItem="vdR-1Z-y1v" secondAttribute="top" constant="8" id="0TV-Jd-kxS"/>
+                                <constraint firstItem="ctj-5p-e1h" firstAttribute="leading" secondItem="vdR-1Z-y1v" secondAttribute="leading" constant="8" id="1TJ-7w-2DF"/>
+                                <constraint firstAttribute="trailing" secondItem="ctj-5p-e1h" secondAttribute="trailing" constant="8" id="322-lH-wu3"/>
+                                <constraint firstAttribute="bottom" secondItem="ctj-5p-e1h" secondAttribute="bottom" constant="8" id="NqZ-jF-X4D"/>
+                                <constraint firstAttribute="height" constant="50" id="TeO-Ef-oPA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KId-Lj-CmI">
+                            <rect key="frame" x="0.0" y="50" width="304" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you working on? Dribbble is show and tell for designers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75o-8R-Vwk">
+                                    <rect key="frame" x="8" y="8" width="288" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="75o-8R-Vwk" firstAttribute="top" secondItem="KId-Lj-CmI" secondAttribute="top" constant="8" id="1EK-pf-cMu"/>
+                                <constraint firstItem="75o-8R-Vwk" firstAttribute="leading" secondItem="KId-Lj-CmI" secondAttribute="leading" constant="8" id="5PJ-fG-yUv"/>
+                                <constraint firstAttribute="bottom" secondItem="75o-8R-Vwk" secondAttribute="bottom" constant="8" id="6sC-EW-0Zi"/>
+                                <constraint firstAttribute="height" constant="50" id="MBB-Yg-LDQ"/>
+                                <constraint firstAttribute="trailing" secondItem="75o-8R-Vwk" secondAttribute="trailing" constant="8" id="cFB-Et-Xln"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-B7-Ooj" customClass="dribbbleGrayButton" customModule="AndroidTabBar" customModuleProvider="target">
+                            <rect key="frame" x="8" y="108" width="139" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="EYz-LT-wF8"/>
+                            </constraints>
+                            <state key="normal" title="Learn more"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwc-xW-gmQ" customClass="dribbblePinkButton" customModule="AndroidTabBar" customModuleProvider="target">
+                            <rect key="frame" x="157" y="108" width="139" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="iHo-7V-sms"/>
+                            </constraints>
+                            <state key="normal" title="Sign up"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZT-Es-TRv">
+                            <rect key="frame" x="8" y="156" width="288" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qv-7u-SC8">
+                            <rect key="frame" x="222" y="514" width="74" height="30"/>
+                            <state key="normal" title="Read more"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.80347339527027029" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="oRg-B7-Ooj" firstAttribute="leading" secondItem="8GH-hx-gz4" secondAttribute="leading" constant="8" id="13D-5P-gBE"/>
+                        <constraint firstAttribute="trailing" secondItem="0Qv-7u-SC8" secondAttribute="trailing" constant="8" id="3Au-9F-gHm"/>
+                        <constraint firstItem="oRg-B7-Ooj" firstAttribute="top" secondItem="KId-Lj-CmI" secondAttribute="bottom" constant="8" id="5f6-3T-nm2"/>
+                        <constraint firstAttribute="trailing" secondItem="KId-Lj-CmI" secondAttribute="trailing" id="7Me-o9-tb4"/>
+                        <constraint firstItem="rwc-xW-gmQ" firstAttribute="width" secondItem="oRg-B7-Ooj" secondAttribute="width" id="A9C-Jc-db8"/>
+                        <constraint firstItem="rwc-xW-gmQ" firstAttribute="top" secondItem="KId-Lj-CmI" secondAttribute="bottom" constant="8" id="Als-Xd-OtS"/>
+                        <constraint firstItem="vdR-1Z-y1v" firstAttribute="top" secondItem="8GH-hx-gz4" secondAttribute="top" id="Bc5-Od-1Sh"/>
+                        <constraint firstAttribute="trailing" secondItem="rwc-xW-gmQ" secondAttribute="trailing" constant="8" id="FJB-F7-f3Q"/>
+                        <constraint firstItem="vdR-1Z-y1v" firstAttribute="leading" secondItem="8GH-hx-gz4" secondAttribute="leading" id="GDm-4H-zic"/>
+                        <constraint firstAttribute="bottom" secondItem="0Qv-7u-SC8" secondAttribute="bottom" constant="8" id="Mqn-aw-ejf"/>
+                        <constraint firstAttribute="trailing" secondItem="vdR-1Z-y1v" secondAttribute="trailing" id="OYg-h6-FC3"/>
+                        <constraint firstItem="kZT-Es-TRv" firstAttribute="leading" secondItem="8GH-hx-gz4" secondAttribute="leading" constant="8" id="eUk-71-g6F"/>
+                        <constraint firstAttribute="trailing" secondItem="kZT-Es-TRv" secondAttribute="trailing" constant="8" id="iYt-9R-8Do"/>
+                        <constraint firstItem="rwc-xW-gmQ" firstAttribute="leading" secondItem="oRg-B7-Ooj" secondAttribute="trailing" constant="10" id="ip5-Q7-xTA"/>
+                        <constraint firstItem="KId-Lj-CmI" firstAttribute="top" secondItem="vdR-1Z-y1v" secondAttribute="bottom" id="ldZ-dh-Zz1"/>
+                        <constraint firstItem="KId-Lj-CmI" firstAttribute="leading" secondItem="8GH-hx-gz4" secondAttribute="leading" id="qGR-E5-m2X"/>
+                        <constraint firstItem="kZT-Es-TRv" firstAttribute="top" secondItem="rwc-xW-gmQ" secondAttribute="bottom" constant="8" id="r2J-Ol-ag9"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kZT-Es-TRv" secondAttribute="bottom" constant="8" id="yDb-yj-KCq"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="8GH-hx-gz4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="3OL-Go-qHh"/>
                 <constraint firstItem="bfX-L5-CeK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7sZ-Hv-AqO"/>
+                <constraint firstAttribute="trailing" secondItem="8GH-hx-gz4" secondAttribute="trailing" constant="8" id="J2e-E3-bbc"/>
                 <constraint firstAttribute="trailing" secondItem="bfX-L5-CeK" secondAttribute="trailing" id="O8h-BJ-EQu"/>
                 <constraint firstAttribute="bottom" secondItem="bfX-L5-CeK" secondAttribute="bottom" id="VPs-pN-aIa"/>
+                <constraint firstAttribute="bottom" secondItem="8GH-hx-gz4" secondAttribute="bottom" constant="8" id="fAF-TG-D1z"/>
+                <constraint firstItem="8GH-hx-gz4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="g5I-QF-lTL"/>
                 <constraint firstItem="bfX-L5-CeK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uWi-K4-2qo"/>
             </constraints>
             <point key="canvasLocation" x="340" y="375"/>

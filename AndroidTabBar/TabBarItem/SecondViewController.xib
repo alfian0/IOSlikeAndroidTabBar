@@ -11,6 +11,7 @@
                 <outlet property="capsuleButton" destination="kTj-Gf-nXY" id="ACm-oc-6db"/>
                 <outlet property="dashedLineView" destination="HZY-6F-hUe" id="gta-lb-NMi"/>
                 <outlet property="profileImage" destination="GlQ-Up-0cs" id="qKX-lV-QjO"/>
+                <outlet property="shadowBox" destination="ryV-Dk-isk" id="thh-A1-u1Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,6 +45,22 @@
                         <constraint firstAttribute="height" constant="1" id="vo4-A3-TYT"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryV-Dk-isk">
+                    <rect key="frame" x="135" y="10" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.29803921568627451" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="myW-ia-jQP"/>
+                        <constraint firstAttribute="height" constant="50" id="pKl-Fx-ic0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -51,11 +68,13 @@
                 <constraint firstItem="HZY-6F-hUe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="79U-6y-34D"/>
                 <constraint firstAttribute="trailing" secondItem="kTj-Gf-nXY" secondAttribute="trailing" constant="8" id="BoI-7y-3Vd"/>
                 <constraint firstItem="PWL-p7-vYX" firstAttribute="top" secondItem="GlQ-Up-0cs" secondAttribute="bottom" constant="8" id="E1j-eL-noa"/>
+                <constraint firstItem="ryV-Dk-isk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F3y-gQ-L22"/>
                 <constraint firstAttribute="trailing" secondItem="PWL-p7-vYX" secondAttribute="trailing" constant="8" id="Gc3-Vj-7wq"/>
                 <constraint firstItem="PWL-p7-vYX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KBy-oB-RDO"/>
                 <constraint firstItem="PWL-p7-vYX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="LaB-1P-OEX"/>
                 <constraint firstItem="HZY-6F-hUe" firstAttribute="top" secondItem="kTj-Gf-nXY" secondAttribute="bottom" constant="8" id="N0t-xE-gIm"/>
                 <constraint firstItem="kTj-Gf-nXY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="arh-jY-FY3"/>
+                <constraint firstItem="ryV-Dk-isk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="lRt-uB-wuW"/>
                 <constraint firstItem="kTj-Gf-nXY" firstAttribute="top" secondItem="PWL-p7-vYX" secondAttribute="bottom" constant="8" id="rE0-Lp-VGB"/>
                 <constraint firstAttribute="trailing" secondItem="HZY-6F-hUe" secondAttribute="trailing" constant="8" id="xQa-2X-o26"/>
             </constraints>

@@ -9,6 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
 
     init() {
         super.init(nibName: "FirstViewController", bundle: nil)
@@ -20,6 +21,7 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Alfiansyah1")
+        self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.OnDrag
     }
 }

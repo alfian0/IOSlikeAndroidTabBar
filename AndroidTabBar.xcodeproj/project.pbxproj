@@ -14,6 +14,7 @@
 		8068E2721DA3E5CE00C42740 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2711DA3E5CE00C42740 /* ColorPalette.swift */; };
 		8068E2741DA3E62000C42740 /* ImageFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2731DA3E62000C42740 /* ImageFactories.swift */; };
 		8068E2761DA3EEFC00C42740 /* FontFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E2751DA3EEFC00C42740 /* FontFactories.swift */; };
+		8084F5241DCE6F6E00525311 /* DribbbleColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084F5231DCE6F6E00525311 /* DribbbleColorPalette.swift */; };
 		80CA85A51D91709B00F725A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA85A41D91709B00F725A0 /* AppDelegate.swift */; };
 		80CA85AC1D91709B00F725A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CA85AB1D91709B00F725A0 /* Assets.xcassets */; };
 		80CA85AF1D91709B00F725A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CA85AD1D91709B00F725A0 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		8068E2711DA3E5CE00C42740 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		8068E2731DA3E62000C42740 /* ImageFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFactories.swift; sourceTree = "<group>"; };
 		8068E2751DA3EEFC00C42740 /* FontFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFactories.swift; sourceTree = "<group>"; };
+		8084F5231DCE6F6E00525311 /* DribbbleColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleColorPalette.swift; sourceTree = "<group>"; };
 		80CA85A11D91709B00F725A0 /* AndroidTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CA85A41D91709B00F725A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CA85AB1D91709B00F725A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				80CA85C41D917ABE00F725A0 /* SecondViewController.xib */,
 				80CA85C71D917ACA00F725A0 /* ThirdViewController.swift */,
 				80CA85C81D917ACA00F725A0 /* ThirdViewController.xib */,
+				8084F5231DCE6F6E00525311 /* DribbbleColorPalette.swift */,
 			);
 			path = TabBarItem;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				80CA85A51D91709B00F725A0 /* AppDelegate.swift in Sources */,
 				80CA85C51D917ABE00F725A0 /* SecondViewController.swift in Sources */,
 				80CA85C91D917ACA00F725A0 /* ThirdViewController.swift in Sources */,
+				8084F5241DCE6F6E00525311 /* DribbbleColorPalette.swift in Sources */,
 				8068E2691DA3E0DE00C42740 /* SwiftyJSON.swift in Sources */,
 				8029554A1DA3A1E80073A37C /* AnimationLibrary.swift in Sources */,
 				8068E26F1DA3E1AF00C42740 /* UIImageView.swift in Sources */,

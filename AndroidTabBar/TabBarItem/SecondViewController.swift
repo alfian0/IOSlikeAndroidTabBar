@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var alertButton: DefaultButton!
     @IBOutlet weak var dashedLineView: UIView!
     @IBOutlet weak var capsuleButton: CapsuleButton!
+    @IBOutlet weak var shadowBox: UIView!
 
     init() {
         super.init(nibName: "SecondViewController", bundle: nil)
@@ -23,11 +24,12 @@ class SecondViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
         self.profileImage.image = UIImage.backgroundImage()
         self.profileImage.circleMask()
+        self.profileImage.addShadow(self.view)
         
         self.alertButton.setState(state: ButtonState.Enable)
         self.alertButton.addTarget(self, action: #selector(self.alertAction(_:)), forControlEvents: .TouchUpInside)
@@ -35,6 +37,14 @@ class SecondViewController: UIViewController {
         self.capsuleButton.setState(state: ButtonState.Enable)
         self.dashedLineView.addDashedLine()
         self.capsuleButton.addDashedBorder(UIColor.redColor())
+        
+        self.shadowBox.layer.cornerRadius = 5
+        self.shadowBox.addShadow(self.view)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Alfiansyah2")
     }
     
     @objc private func alertAction(sender: UIButton) {
